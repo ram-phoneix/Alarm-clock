@@ -1,0 +1,153 @@
+  /* Main page design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .btn {
+    outline: aqua;
+    border: aquamarine;
+    background-color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 1px;
+  }
+  select {
+    appearance: none;
+    outline: none;
+    background-color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    color: #0E141B;
+    border-color: black;
+  }
+  
+  .mb {
+    margin-bottom: 1rem;
+  }
+  
+  /* end of Main page design */
+  
+  .main-container {
+    width:100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #08001f, #30197d);
+    color: #fff;
+    position: relative;
+  }
+  
+  .clock-container {
+    align-items: center;
+    padding: 3rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 200vh;
+    background-color: skyblue;
+   
+  }
+  
+  .current-time {
+    font-size: 2rem;
+    color: darkblue;
+  }
+  
+  .alarm-form {
+    display: flex; /* Use 'display: flex' to arrange elements horizontally */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    margin-bottom: 1rem;
+
+  }
+  
+  .submit-button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: brown;
+    background-color: rgb(174, 52, 52);
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  
+  .set-alarm-container {
+    width: 100%;
+  }
+  
+  /* Setting alarm*/
+  .set-alarm-container .set-alarm-container-title {
+    color: darkblue;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .alarm {
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+  
+  }
+
+  /* deleting alarm*/
+  .alarm .delete-alarm {
+    border-radius: 2rem;
+    background-color: darkblue;
+    font-weight: bold;
+    color: mistyrose;
+    font-size:xx-medium;
+  }
+  
+  
+  .time {
+    color: darkblue;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .btn:bold,
+
+  
+  /* page title section*/
+  .page-title{
+    background-color: #0E141B;
+    align-items: center;
+    text-align: center;
+    color: aquamarine;
+    
+  }
+
+  
+  /* style of devices of screen size less than 768px */
+  @media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .main-container {
+      padding-block: 2rem;
+    }
+    .clock-container{
+        justify-content: center;
+        border-radius: 50px;
+        width: 450px;
+        min-height: auto;
+    }
+  }
