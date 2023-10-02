@@ -68,9 +68,9 @@
   }
   
   .alarm-form {
-    display: flex; /* Use 'display: flex' to arrange elements horizontally */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center elements horizontally */
+    display: flex;  
+    flex-direction: column;  
+    align-items: center; 
     margin-bottom: 1rem;
 
   }
